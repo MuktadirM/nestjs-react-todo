@@ -30,3 +30,18 @@ $ docker-compose build
 # To start the container
 $ docker-compose up -d
 ```
+
+## Other useful Docker commands
+```sh
+# Get the container ID
+$ docker ps
+
+# View logs
+$ docker logs <container id>
+
+# Enter the container (In alpine, use sh because bash is not installed by default)
+$ docker exec -it <container id> /bin/sh
+```
+
+## License
+[MIT licensed](LICENSE)
